@@ -1,0 +1,26 @@
+=== Task 1: Process Creation ===
+Parent PID: 3452
+Child 1: PID=3453, Parent PID=3452
+Child 2: PID=3454, Parent PID=3452
+Child 3: PID=3455, Parent PID=3452
+
+=== Task 2: Command Execution Using exec() ===
+Executing command: ls
+Executing command: date
+Executing command: whoami
+
+=== Task 3: Zombie & Orphan Processes ===
+Parent PID: 5123, Child PID: 5124
+Parent not waiting, child becomes zombie...
+Child (orphan) PID: 5125, New Parent: 1
+
+=== Task 4: Inspecting Process Info from /proc ===
+Name: python3
+State: S (sleeping)
+Executable Path: /usr/bin/python3
+Open File Descriptors: ['0', '1', '2']
+
+=== Task 5: Process Prioritization ===
+Child 1 (PID=6001) running with nice value 0
+Child 2 (PID=6002) running with nice value 5
+Child 3 (PID=6003) running with nice value 10
